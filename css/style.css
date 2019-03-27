@@ -82,8 +82,19 @@ body, html {
 }
 #menu{
     background-color: white;
+    height: 60px;
+}
+.container{
+   
 }
 #menu ul{
     float: left;
     list-style-type: none;
+    height: 100%;
+    line-height: 60px;
+    padding: 0;
+    margin: 0 10px 0 10px;
+}
+#menu ul li{
+   
 }
