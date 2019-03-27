@@ -9,45 +9,68 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/glyphicon.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
-
     <link rel="shortcut icon" href="/img/favicon.ico" />
 </head>
 
 <body>
-
-    <navbar>
-
-        <div class="navbar">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <div class="logo">
-                        <img src="img/640px-HSV-Logo.png" />
-                        <h1>WITAJ W <span>DOMU!</span></h1>
-                    </div>
-                    <div class="navbar-list">
-                        <ul>
-                            <li> 
-                                    <span class="	glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Sklep
-                                </li>
-                        </ul>
-                        <ul>
-                            <li> <button type="button" class="btn btn-danger btn-md ">
-                                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Zaloguj się
-                                  </button></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </navbar>
-
+    <!-- pasek na samej górze z logo i odnośnikami do sklepu i logowania się-->
     <header>
+        <nav class="navbar navbar-dark navbar-expand-md ">
+            <div class="container">
+                <div class="logo">
+                    <a class="navbar-brand" href="#"><img src="img/640px-HSV-Logo.png" /></a>
+                    <h1>WITAJ W <span>DOMU!</span></h1>
+                </div>
 
+                <div class="collapse navbar-collapse" id="navbar-list">
+                    <ul>
+                        <li>
+                            <span class="	glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Sklep
+                        </li>
+                    </ul>
+                    <ul>
+                        <li> <button type="button" class="btn btn-danger btn-md ">
+                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Zaloguj się
+                            </button></li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list"
+                    aria-controls="navbar-list" aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+            </div>
+        </nav>
+        <nav id="menu">
+            <div class="container">
+                <ul>
+                    <li>asdasd</li>
+                </ul>
+                <ul>
+                    <li>asdasd</li>
+                </ul>
+                <ul>
+                    <li>asdasd</li>
+                </ul>
+                <ul>
+                    <li>asdasd</li>
+                </ul>
+                <ul>
+                    <li>asdasd</li>
+                </ul>
+            </div>
+        </nav>
     </header>
+    <!---------------------------------------------------------------------------------------------------------------------------->
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
 </body>
 
