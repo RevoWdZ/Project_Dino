@@ -24,9 +24,7 @@ body, html {
     font-family: sans-serif;
     padding: 0;
     height: 80px;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
 }
 
@@ -113,26 +111,72 @@ body, html {
 .main-content {
     padding-top: 20px;
     padding-bottom: 75px;
-    height: 100%;
+    min-height: 100%;
 }
 
-@media(min-width:  1437px) {
+@media(min-width : 1437px) {
     .divsizer {
         max-width: 1407px;
         margin: 0 auto;
     }
 }
 
+@media (min-width:1600px) {
+    .container {
+        width: 933px;
+    }
+}
+
+@media (min-width:963px) {
+    .container {
+        width: 933px;
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 100%;
+    }
+}
+
 .divwrapper {
-    text-align: center;
-    height: 100%;
+    min-height: 100%;
     height: auto !important;
     background-color: gray;
 }
 
-footer {
-    background-color: blueviolet;
-    min-height: 200px;
+@media(min-width : 1600px) {
+    .grid {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
 
-.grid {}
+.grid {
+    max-height: 100% !important;
+}
+
+.slider {
+    height: 500px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.title_for_articles {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+.articles{
+    height: 700px;
+    background-color: white;
+}
+.article{
+    height: 300px;
+    width:350px;
+    background-color: brown;
+    float: left;
+    margin: 30px 10px 10px 30px;
+}
