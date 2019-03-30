@@ -1,1 +1,1 @@
-HTML website for polish community of Hamburger SV
+Polska strona poświęcona Hamburgerowi SV
