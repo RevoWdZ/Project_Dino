@@ -111,10 +111,10 @@ body, html {
 .main-content {
     padding-top: 20px;
     padding-bottom: 75px;
-    min-height: 100%;
+    height: 3000px;
 }
 
-@media(min-width : 1437px) {
+@media(min-width: 1437px) {
     .divsizer {
         max-width: 1407px;
         margin: 0 auto;
@@ -145,7 +145,7 @@ body, html {
     background-color: gray;
 }
 
-@media(min-width : 1600px) {
+@media(min-width: 1600px) {
     .grid {
         max-width: 1200px;
         margin: 0 auto;
@@ -153,7 +153,7 @@ body, html {
 }
 
 .grid {
-    max-height: 100% !important;
+    height: 3000px;
 }
 
 .slider {
@@ -163,20 +163,46 @@ body, html {
     margin-bottom: 20px;
 }
 
-.title_for_articles {
+.separator {
     width: 100%;
     height: 100px;
     background-color: white;
     margin-bottom: 20px;
 }
-.articles{
+
+.articles {
     height: 700px;
     background-color: white;
+    margin-bottom: 20px;
 }
-.article{
+
+.article {
     height: 300px;
-    width:350px;
+    width: 350px;
     background-color: brown;
     float: left;
     margin: 30px 10px 10px 30px;
+}
+
+.nextmatch {
+    height: 200px;
+    background-color: white;
+    margin-bottom: 20px;
+    float: left;
+    margin-right: 20px;
+    width: 600px;
+}
+
+.teamstats {
+    height: 400px;
+    width: 580px;
+    float: left;
+    background-color: white;
+}
+
+.leaguetable {
+    height: 360px;
+    width: 560px;
+    float: left;
+    background-color: white;
 }
