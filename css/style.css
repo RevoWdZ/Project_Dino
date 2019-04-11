@@ -111,7 +111,7 @@ body, html {
 .main-content {
     padding-top: 20px;
     padding-bottom: 75px;
-    height: 3000px;
+    height: 2422px;
 }
 
 @media(min-width: 1437px) {
@@ -140,7 +140,6 @@ body, html {
 }
 
 .divwrapper {
-    min-height: 100%;
     height: auto !important;
     background-color: gray;
 }
@@ -150,10 +149,6 @@ body, html {
         max-width: 1200px;
         margin: 0 auto;
     }
-}
-
-.grid {
-    height: 3000px;
 }
 
 .slider {
@@ -207,7 +202,8 @@ body, html {
     clear: both;
     background-color: white;
 }
-.leaguetable_button{
+
+.leaguetable_button {
     height: 40px;
     width: 80px;
     background-color: blue;
@@ -217,7 +213,8 @@ body, html {
     margin-bottom: 10px !important;
     margin-right: 10px;
 }
-.leaguetable_button h6{
+
+.leaguetable_button h6 {
     text-align: center;
     line-height: 40px;
     color: white;
@@ -232,7 +229,36 @@ body, html {
     margin-bottom: 20px;
 }
 
-.trophies{
+.trophies {
     background-color: white;
     height: 200px;
+}
+
+footer {
+    padding: 25px 0;
+    height: 540px;
+    background-color: yellow;
+}
+
+.clock {
+    height: 150px;
+    background-color: black;
+    margin-bottom: 20px;
+}
+
+#desktopFooter {
+    height: 200px;
+    background-color: aqua;
+    margin-bottom: 20px;
+}
+.footerLinks{
+    height: 100px;
+    background-color: chocolate;
+}
+.footerLinks ul{
+    float: left;
+    list-style-type: none;
+}
+.footerLinks ul li{
+    text-align: center;
 }
