@@ -113,7 +113,6 @@ body, html {
 .main-content {
     padding-top: 20px;
     padding-bottom: 75px;
-    height: 2206px;
 }
 
 @media(min-width: 1437px) {
@@ -136,9 +135,16 @@ body, html {
 }
 
 .divwrapper {
-    height: auto !important;
+    width: 100% !important;
+    text-align: center;
+    min-height: 100%;
+    height: 100%;
     /* background-color: gray; */
 }
+* {
+    margin: 0px;
+  }
+
 
 @media(min-width: 1600px) {
     .grid {
@@ -156,23 +162,19 @@ body, html {
 
 .separator {
     width: 100%;
-    height: 100px;
+    height: 50px;
     background-color: white;
     margin-bottom: 20px;
 }
 
 .articles {
-    height: 700px;
     background-color: white;
     margin-bottom: 20px;
 }
 
 .article {
-    height: 295px;
-    width: 100px;
     background-color: brown;
-    display: inline-block;
-    margin: 20px 45px 45px 30px;
+    margin: 20px 20px 20px 20px;
 }
 
 .nextmatch {
@@ -227,7 +229,7 @@ body, html {
 
 .trophies {
     background-color: white;
-    height: 200px;
+    height: 198px;
 }
 
 footer {
