@@ -23,11 +23,13 @@ body, html {
 .container {
     font-family: sans-serif;
     padding: 0;
-    height: 80px;
+    height: 700px;
     justify-content: space-between;
     width: 100%;
 }
-
+.container-navbar{
+    height: 76px;
+}
 .logo {
     width: 380px;
     height: 100%;
@@ -111,7 +113,7 @@ body, html {
 .main-content {
     padding-top: 20px;
     padding-bottom: 75px;
-    height: 2422px;
+    height: 2206px;
 }
 
 @media(min-width: 1437px) {
@@ -135,7 +137,7 @@ body, html {
 
 .divwrapper {
     height: auto !important;
-    background-color: gray;
+    /* background-color: gray; */
 }
 
 @media(min-width: 1600px) {
@@ -166,11 +168,11 @@ body, html {
 }
 
 .article {
-    height: 300px;
-    width: 350px;
+    height: 295px;
+    width: 100px;
     background-color: brown;
-    float: left;
-    margin: 30px 10px 10px 30px;
+    display: inline-block;
+    margin: 20px 45px 45px 30px;
 }
 
 .nextmatch {
@@ -179,12 +181,12 @@ body, html {
     margin-bottom: 20px;
     float: left;
     margin-right: 20px;
-    width: 600px;
+    width: 533px;
 }
 
 .teamstats {
     height: 400px;
-    width: 580px;
+    width: 380px;
     display: inline-block;
     background-color: white;
     margin: 0;
@@ -192,7 +194,7 @@ body, html {
 
 .leaguetable {
     height: 180px;
-    width: 600px;
+    width: 533px;
     clear: both;
     background-color: white;
 }
