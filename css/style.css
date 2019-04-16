@@ -27,9 +27,11 @@ body, html {
     justify-content: space-between;
     width: 100%;
 }
-.container-navbar{
+
+.container-navbar {
     height: 76px;
 }
+
 .logo {
     width: 380px;
     height: 100%;
@@ -141,10 +143,10 @@ body, html {
     height: 100%;
     /* background-color: gray; */
 }
+
 * {
     margin: 0px;
-  }
-
+}
 
 @media(min-width: 1600px) {
     .grid {
@@ -157,6 +159,7 @@ body, html {
     height: 500px;
     width: 100%;
     background-color: white;
+    /* padding: 20px 20px 20px 20px; */
     margin-bottom: 20px;
 }
 
@@ -175,6 +178,7 @@ body, html {
 .article {
     background-color: brown;
     margin: 20px 20px 20px 20px;
+    padding: 10px 10px 10px 10px;
 }
 
 .nextmatch {
@@ -339,4 +343,24 @@ hr {
     border-top: 1px solid #bbbbbb;
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+.insideslider {
+   padding: 20px 20px 20px 20px;   
+}
+
+.inside_inside_slider{
+    background-color: black;
+    height: 100%;
+}
+
+.inside_article{
+    background-color: #333;
+    margin: 0;
+    height: 100%;
+}
+
+.inside_article:hover{
+    background-color: #0055aa;
+    
 }
