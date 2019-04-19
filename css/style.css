@@ -176,7 +176,7 @@ body, html {
 }
 
 .article {
-    background-color: brown;
+    background-color: #0055aa;
     margin: 10px 5px 10px 10px;
     padding: 10px 10px 10px 10px;
 }
@@ -203,6 +203,7 @@ body, html {
     width: 533px;
     clear: both;
     background-color: white;
+    padding: 10px 10px 10px 10px;
 }
 
 .leaguetable_button {
@@ -212,8 +213,12 @@ body, html {
     position: absolute;
     bottom: 0;
     right: 0;
-    margin-bottom: 10px !important;
-    margin-right: 10px;
+    margin-bottom: 20px !important;
+    margin-right: 20px;
+}
+
+.leaguetable_button:hover{
+    background-color: #035fbb;
 }
 
 .leaguetable_button h6 {
@@ -355,9 +360,25 @@ hr {
 }
 
 .inside_article {
-    background-color: #333;
+    background-color: white;
     margin: 0;
     height: 100%;
+}
+.article-img{
+    height: 150px;
+}
+.article-img img{
+    height: 100%;
+    width: 100%;
+}
+
+.article-header{
+    height: 30px;
+    margin-top: 5px;
+}
+
+.article-header p{
+    justify-content: center;
 }
 
 .inside_article:hover {
