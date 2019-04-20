@@ -28,10 +28,6 @@ body, html {
     width: 100%;
 }
 
-.container-navbar {
-    height: 76px;
-}
-
 .logo {
     width: 380px;
     height: 100%;
@@ -46,10 +42,6 @@ body, html {
     margin-bottom: 8px;
 }
 
-.navbar-brand {
-    padding: 0;
-}
-
 .logo h1 {
     height: 100%;
     float: right;
@@ -58,18 +50,10 @@ body, html {
     line-height: 76px;
 }
 
-.logo span {
-    color: white;
-}
-
 #navbar-list {
     color: white;
     width: 300px;
     height: 100%;
-}
-
-.collapse.navbar-collapse {
-    max-width: 300px;
 }
 
 #navbar-list ul {
