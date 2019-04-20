@@ -25,9 +25,10 @@
 
                 <div class="collapse navbar-collapse" id="navbar-list" style="max-width: 300px;">
                     <ul>
-                        <li><a href="https://shop.hsv.de/?utm_source=hsvde&utm_medium=Navbar&utm_campaign=Shop" target="_blank"><button
-                                    type="button" class="btn btn-primary" style="width: 100px;"><span
-                                        class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Sklep
+                        <li><a href="https://shop.hsv.de/?utm_source=hsvde&utm_medium=Navbar&utm_campaign=Shop"
+                                target="_blank"><button type="button" class="btn btn-primary"
+                                    style="width: 100px;"><span class="glyphicon glyphicon-shopping-cart"
+                                        aria-hidden="true"></span> Sklep
                                 </button></a>
                         </li>
                     </ul>
@@ -211,20 +212,41 @@
     <footer class="footer">
         <div class=" container clock">
             <div class="row" style="padding: 0 0 0 0;margin-bottom: 10px;">
-                <div class="col-xs-12 tradition" style="color: white; text-align: center;">Tradycja kontynuowana od
+                <div class="col-xs-12 tradition" style="font-size: 25px;">Tradycja kontynuowana od
                 </div>
             </div>
 
-            <div id="counter">
+            <hr>
+
+            <div class="counter">
+                <div class="row" style="padding: 0 0 0 0;height: 100%">
+                    <div class="d-flex align-items-center" id="countup" style="width:100%;">
+                        <div class="hsvbox-text col-xs-2"><span class="glyphicon glyphicon-time" aria-hidden="true"></span></div>
+                        <div class="hsvbox-text col-xs-2 years"> 00 </div>
+                        <div class="hsvbox-text col-xs-2 days"> 00 </div>
+                        <div class="hsvbox-text col-xs-2 hours"> 00 </div>
+                        <div class="hsvbox-text col-xs-2 minutes"> 00 </div>
+                        <div class="hsvbox-text col-xs-2 seconds"> 00 </div>
+                    </div>
+
+                </div>
+
 
             </div>
-            
-            <div class="row" style="padding: 0 0 0 0;">
-            
+
+            <div class="row" style="padding: 0 0 0 0;justify-content: center;">
+                <div class="hsvbox-text col-xs-2"></div>
+                <div class="hsvbox-text col-xs-2" style="font-size: 15px;">Lat</div>
+                <div class="hsvbox-text col-xs-2" style="font-size: 15px;">Dni</div>
+                <div class="hsvbox-text col-xs-2" style="font-size: 15px;">Godzin</div>
+                <div class="hsvbox-text col-xs-2" style="font-size: 15px;">Minut</div>
+                <div class="hsvbox-text col-xs-2" style="font-size: 15px;">Sekund</div>
+
             </div>
+            <hr>
+
             
-            
-            
+
         </div>
         <div id="desktopFooter" class="container hidden-xs hidden-sm">
             <div class="row">
@@ -236,17 +258,17 @@
 
 
             <div class="row hidden-xs hidden-sm">
-                <div class="col-md-2  col-md-offset-2"><a>
-                        <div class="btn btn-link">KONTAKT</div>
+                <div class="col-md-2 col-md-offset-2"><a>
+                        <div class="btn btn-link footer-links">KONTAKT</div>
                     </a></div>
                 <div class="col-md-2"><a>
-                        <div class="btn btn-link">KONTAKT</div>
+                        <div class="btn btn-link  footer-links ">KONTAKT</div>
                     </a></div>
                 <div class="col-md-2"><a>
-                        <div class="btn btn-link">KONTAKT</div>
+                        <div class="btn btn-link  footer-links">KONTAKT</div>
                     </a></div>
                 <div class="col-md-2"><a>
-                        <div class="btn btn-link">KONTAKT</div>
+                        <div class="btn btn-link  footer-links">KONTAKT</div>
                     </a></div>
             </div>
 
@@ -265,6 +287,7 @@
         integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
     <script src="/js/slideshow.js"></script>
+    <script src="/js/timer.js"></script>
 
 </body>
 
