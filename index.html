@@ -9,8 +9,13 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/glyphicon.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui.css">
     <link rel="shortcut icon" href="/img/favicon.ico" />
     <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
 </head>
 
 <body>
@@ -47,8 +52,8 @@
         </nav>
         <!--MENU--->
         <nav id="menu">
-            <div class="menu-container">
-                <div class="row">
+            <div class="menu-container container">
+                <div class="row " style="height: 60px;">
                     <ul>
                         <li>Wiadomości</li>
                     </ul>
@@ -76,8 +81,8 @@
     </header>
     <!---------------------------------------------------------------------------------------------------------------------------->
     <main class="main-content" id="content" role="main">
-        <div class="divwrapper container divsizer">
-            <div class="container grid" style="position:relative;height:2106px;">
+        <div class="divwrapper container divsizer" id="divsizer">
+            <div class="container grid" id="grid" style="position:relative;height:2106px;">
                 <div class="slider grid-item">
                     <div class="slider insideslider">
                         <div class="slider slideshow_container" style="margin:0;">
@@ -192,7 +197,7 @@
                         style="height:420px; width:100%;" frameborder="0"></iframe>
                 </div>
 
-                <div class="leaguetable grid-item" style="position:absolute;left:0px;top:1600px;">
+                <div class="leaguetable grid-item" style="left:0px;top:1600px;">
                     <img src="/img/table.jpg" style="height: 100%; width: 100%;">
                     <a href="https://www.flashscore.pl/pilka-nozna/niemcy/2-bundesliga/tabela/" target="_blank">
                         <div class="leaguetable_button grid-item">
@@ -221,7 +226,8 @@
             <div class="counter">
                 <div class="row" style="padding: 0 0 0 0;height: 100%">
                     <div class="d-flex align-items-center" id="countup" style="width:100%;">
-                        <div class="hsvbox-text col-xs-2"><span class="glyphicon glyphicon-time" aria-hidden="true"></span></div>
+                        <div class="hsvbox-text col-xs-2"><span class="glyphicon glyphicon-time"
+                                aria-hidden="true"></span></div>
                         <div class="hsvbox-text col-xs-2 years"> 00 </div>
                         <div class="hsvbox-text col-xs-2 days"> 00 </div>
                         <div class="hsvbox-text col-xs-2 hours"> 00 </div>
@@ -245,7 +251,7 @@
             </div>
             <hr>
 
-            
+
 
         </div>
         <div id="desktopFooter" class="container hidden-xs hidden-sm">
@@ -288,7 +294,7 @@
         crossorigin="anonymous"></script>
     <script src="/js/slideshow.js"></script>
     <script src="/js/timer.js"></script>
-
+    <script src="/js/resize.js"></script>
 </body>
 
 </html>

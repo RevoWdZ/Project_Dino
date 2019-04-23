@@ -103,7 +103,7 @@ body, html {
     line-height: 60px;
     padding: 0;
     margin: 0 10px 0 10px;
-    padding: 0 30px 0 30px;
+    padding: 0 20px 0 20px;
     font-family: 'Fira Mono', monospace;
 }
 
@@ -235,6 +235,7 @@ a:not([href]):not([tabindex]) {
 .articles {
     background-color: white;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .article {
@@ -319,7 +320,9 @@ a:not([href]):not([tabindex]) {
     color: white;
     font-size: 14px;
 }
-
+.grid{
+    max-width: 100%;
+}
 .grid-item {
     border: 1px solid #333;
     border-color: rgba(0, 0, 0, 0.5);
@@ -338,7 +341,7 @@ a:not([href]):not([tabindex]) {
 footer {
     padding: 25px 0;
     height: 500px;
-    background-color:#0055aa;
+    background-color: #0055aa;
 }
 
 .row {
@@ -354,7 +357,6 @@ footer .row {
 
 .clock {
     height: 150px;
-    
     margin-bottom: 20px;
 }
 
@@ -375,7 +377,7 @@ footer .row {
     color: white;
     margin: 10px 0 0;
     text-transform: uppercase;
-    text-align: center;  
+    text-align: center;
 }
 
 .col-xs-12 {
@@ -400,8 +402,8 @@ footer .row {
 
 .hsvbox-text {
     font-size: 30px;
-    color:white;
-    text-align:center;
+    color: white;
+    text-align: center;
     margin: 0 0 5px 0;
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -412,21 +414,22 @@ footer .row {
     width: 16.66666667%;
 }
 
-.counter{
-   text-align: center;
-   height: 30px;
-   color: white;
+.counter {
+    text-align: center;
+    height: 30px;
+    color: white;
 }
 
-hr{
+hr {
     border-top: 1px solid rgba(255, 255, 255, 0.7);
     margin: 10px 0 10px 0;
 }
 
-.footer-links{
+.footer-links {
     color: white;
 }
-.footer-links:hover{
+
+.footer-links:hover {
     color: white;
 }
 
@@ -484,5 +487,59 @@ hr{
 @media (min-width: 963px) {
     .col-md-3 {
         width: 25%;
+    }
+}
+
+@media (max-width:991px) {
+    .row ul {
+        padding: 0 !important;
+    }
+}
+
+@media (max-width:991px) {
+    .nextmatch {
+        width: 100%;
+    }
+}
+
+@media (max-width:991px) {
+    .teamstats {
+        width: 100%;
+    }
+}
+
+@media (max-width:991px) {
+    .leaguetable {
+        width: 100%;
+    }
+}
+
+@media (min-width:992px) {
+    .leaguetable {
+        position: absolute;
+    }
+}
+
+@media (max-width:991px) {
+    .main-content {
+        height: 2530px;
+    }
+}
+
+@media (max-width:962px) {
+    .row {
+        justify-content: center;
+    }
+}
+
+@media (min-width:767px) {
+    .col-md-2 {
+        text-align: center;
+    }
+}
+
+@media (max-width:767px) {
+    .footer {
+        height: 100%;
     }
 }
