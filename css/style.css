@@ -1,5 +1,5 @@
 body, html {
-    background-image: url(/img/hsv-stadium.png);
+    background-image: url(../img/hsv-stadium.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -72,8 +72,6 @@ body, html {
 }
 
 .row ul>li:hover {
-    text-decoration: underline;
-    color: #0055aa;
     font-weight: 700;
     cursor: pointer;
 }
@@ -106,6 +104,51 @@ body, html {
     padding: 0 20px 0 20px;
     font-family: 'Fira Mono', monospace;
 }
+#menu ul li:hover{
+    animation: textColor 10s ease infinite;
+}
+
+#menu ul li:after {
+    position: absolute;
+    content: "";
+    top: 5vw;
+    transform: scale(0.75);
+    -webkit-filter: blur(5vw);
+    -moz-filter: blur(5vw);
+    -ms-filter: blur(5vw);
+    filter: blur(5vw);
+    background-size: 200% 200%;
+    animation: animateGlow 10s ease infinite;
+  }
+  @keyframes animateGlow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes textColor {
+    0% {
+      color:#0055aa;
+    }
+    25% {
+        color:#7b04eb;
+      }
+    50% {
+      color:#f30202;
+    }
+    75% {
+        color:#06a0cf;
+      }
+    100% {
+      color:#0055aa;
+    }
+  }
+  
 
 /*------------header-----------------------------*/
 
@@ -320,9 +363,11 @@ a:not([href]):not([tabindex]) {
     color: white;
     font-size: 14px;
 }
-.grid{
+
+.grid {
     max-width: 100%;
 }
+
 .grid-item {
     border: 1px solid #333;
     border-color: rgba(0, 0, 0, 0.5);
@@ -522,7 +567,7 @@ hr {
 
 @media (max-width:991px) {
     .main-content {
-        height: 2530px;
+        height: 100%;
     }
 }
 
@@ -542,4 +587,49 @@ hr {
     .footer {
         height: 100%;
     }
+}
+
+/*-----------------subject------------------- */
+.subject{
+    height: 100%;
+    background-color: white;
+}
+.subject-img{  
+   height: 450px;
+   padding-top: 20px;
+   margin:0 15px 15px 20px;
+}
+.subject-img img{
+    height: 100%;
+    width: 100%;
+}
+.subject-text header{
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+}
+.subject-text p{
+   margin: 0 15px 0 15px;
+   text-align: center;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+form{
+  text-align: center;
+}
+textarea{
+    width: 75%;
+    height: 150px;
+    resize: none;
+    background: #fff;
+}
+button{
+    width: 100px;
+    height: 30px;
+    background: #282828;
+    border: none;
+    color: #fff;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
 }
