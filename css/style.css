@@ -104,7 +104,8 @@ body, html {
     padding: 0 20px 0 20px;
     font-family: 'Fira Mono', monospace;
 }
-#menu ul li:hover{
+
+#menu ul li:hover {
     animation: textColor 10s ease infinite;
 }
 
@@ -119,36 +120,37 @@ body, html {
     filter: blur(5vw);
     background-size: 200% 200%;
     animation: animateGlow 10s ease infinite;
-  }
-  @keyframes animateGlow {
+}
+
+@keyframes animateGlow {
     0% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
     50% {
-      background-position: 100% 50%;
+        background-position: 100% 50%;
     }
     100% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
-  }
-  @keyframes textColor {
+}
+
+@keyframes textColor {
     0% {
-      color:#0055aa;
+        color: #0055aa;
     }
     25% {
-        color:#7b04eb;
-      }
+        color: #7b04eb;
+    }
     50% {
-      color:#f30202;
+        color: #f30202;
     }
     75% {
-        color:#06a0cf;
-      }
-    100% {
-      color:#0055aa;
+        color: #06a0cf;
     }
-  }
-  
+    100% {
+        color: #0055aa;
+    }
+}
 
 /*------------header-----------------------------*/
 
@@ -590,40 +592,47 @@ hr {
 }
 
 /*-----------------subject------------------- */
-.subject{
+
+.subject {
     height: 100%;
     background-color: white;
 }
-.subject-img{  
-   height: 450px;
-   padding-top: 20px;
-   margin:0 15px 15px 20px;
+
+.subject-img {
+    height: 450px;
+    padding-top: 20px;
+    margin: 0 15px 15px 20px;
 }
-.subject-img img{
+
+.subject-img img {
     height: 100%;
     width: 100%;
 }
-.subject-text header{
-    font-size: 25px;
+
+.subject-text header {
+    font-size: 45px;
     font-weight: 800;
     text-align: center;
 }
-.subject-text p{
-   margin: 0 15px 0 15px;
-   text-align: center;
-   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+.subject-text p {
+    margin: 0 15px 0 15px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
-form{
-  text-align: center;
+form {
+    text-align: center;
 }
-textarea{
+
+textarea {
     width: 75%;
     height: 150px;
     resize: none;
     background: #fff;
 }
-button{
+
+button {
     width: 100px;
     height: 30px;
     background: #282828;
@@ -632,4 +641,45 @@ button{
     font-weight: 400;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
+    margin-bottom: 60px;
 }
+
+.commentsection {
+    height: 100%;
+    padding-top: 150px;
+}
+
+.comment-box {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.comment-box p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #282828;
+    font-weight: 100;
+}
+
+.edit-form{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+}
+
+.edit-form button{
+  width: 40px;
+  height: 20px;
+  color: #282828;
+  background-color: #fff;
+  opacity: 0.7;
+}
+
+.edit-form button:hover{
+    opacity: 1;
+  }

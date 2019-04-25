@@ -16,7 +16,7 @@ include 'php/comments.inc.php';
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui.css">
-    <link rel="shortcut icon" href="img/favicon.ico"/>
+    <link rel="shortcut icon" href="img/favicon.ico" />
     <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 
@@ -125,15 +125,20 @@ include 'php/comments.inc.php';
         </div>
         <section class="commentsection container">
             <?php
-            echo "<form method='POST' action='" . setComments($conn) . "'>
-        <input type='hidden' name='user_id' value='Anonymous'>
-        <input type='hidden'name='date' value='" . date('Y-m-d H:i:s') . "'>
-        <textarea name='message'></textarea> <br>
-        <button type='sumbit' name='commentSubmit'>Comment</button>
+            ob_start();
+            $comment_id = $_POST['comment_id'];
+            $user_id = $_POST['user_id'];
+            $date = $_POST['date'];
+            $message = $_POST['message'];
+
+            echo "<form method='POST' action='" . editComments($conn) . "'>
+        <input type='hidden' name='comment_id' value='" . $comment_id . "'>
+        <input type='hidden' name='user_id' value='" . $user_id . "'>
+        <input type='hidden'name='date' value='" . $date . "'>
+        <textarea name='message'>" . $message . "</textarea> <br>
+        <button type='sumbit' name='commentSubmit'>Edit</button>
         </form>";
-
-            getComments($conn);
-
+            ob_end_flush();
             ?>
         </section>
     </main>
