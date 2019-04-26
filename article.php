@@ -16,7 +16,7 @@ include 'php/comments.inc.php';
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui.css">
-    <link rel="shortcut icon" href="img/favicon.ico"/>
+    <link rel="shortcut icon" href="img/favicon.ico" />
     <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 
@@ -34,12 +34,12 @@ include 'php/comments.inc.php';
 
                 <div class="collapse navbar-collapse" id="navbar-list" style="max-width: 300px;">
                     <ul>
-                        <li><a href="https://shop.hsv.de/?utm_source=hsvde&utm_medium=Navbar&utm_campaign=Shop" target="_blank"><button type="button" class="btn btn-primary" style="width: 100px;"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Sklep
+                        <li><a href="https://shop.hsv.de/?utm_source=hsvde&utm_medium=Navbar&utm_campaign=Shop" target="_blank"><button type="button" class="btn btn-primary" style="width: 100px;margin: 0;"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Sklep
                                 </button></a>
                         </li>
                     </ul>
                     <ul>
-                        <li> <button type="button" class="btn btn-danger btn-md" style="width: 124px;">
+                        <li> <button type="button" class="btn btn-danger btn-md" style="width: 124px;margin: 0;">
                                 <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Zaloguj się
                             </button></li>
                     </ul>

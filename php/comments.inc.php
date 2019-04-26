@@ -21,6 +21,10 @@ function getComments($conn)
         echo $row['date'] . "<br>";
         echo nl2br($row['message']);
         echo "</p>
+        <form class='delete-form' method='POST' action='".deleteComments($conn)."'>
+                <input type='hidden' name='comment_id' value='" . $row['comment_id'] . "'>
+                <button type='submit' name='commentDelete'>Delete</button>
+            </form>
             <form class='edit-form' method='POST' action='editcomment.php'>
                 <input type='hidden' name='comment_id' value='" . $row['comment_id'] . "'>
                 <input type='hidden' name='user_id' value='" . $row['user_id'] . "'>
@@ -45,4 +49,15 @@ function editComments($conn)
         header("Location: article.php");
         exit;
     }ob_end_flush();   
+}
+
+function deleteComments($conn){
+    if (isset($_POST['commentDelete'])) {
+        $comment_id = $_POST['comment_id'];
+
+        $sql = "DELETE FROM comments WHERE comment_id='$comment_id'";
+        $result = $conn->query($sql);
+        header("Location: article.php");
+        exit;
+    }  
 }
