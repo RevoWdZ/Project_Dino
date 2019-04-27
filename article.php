@@ -129,7 +129,7 @@ include 'php/comments.inc.php';
         <input type='hidden' name='user_id' value='Anonymous'>
         <input type='hidden'name='date' value='" . date('Y-m-d H:i:s') . "'>
         <textarea name='message'></textarea> <br>
-        <button type='sumbit' name='commentSubmit'>Comment</button>
+        <button type='submit' name='commentSubmit'>Comment</button>
         </form>";
 
             getComments($conn);
