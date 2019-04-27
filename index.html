@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/glyphicon.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/login-system.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui.css">
     <link rel="shortcut icon" href="img/favicon.ico" />
     <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
@@ -21,7 +22,7 @@
         <nav class="navbar navbar-dark navbar-expand-md ">
             <div class="container container-navbar" style="height: 76px;">
                 <div class="logo">
-                    <a class="navbar-brand" href="#" style="padding: 0;"><img src="img/640px-HSV-Logo.png"/></a>
+                    <a class="navbar-brand" href="#" style="padding: 0;"><img src="img/640px-HSV-Logo.png" /></a>
                     <h1>WITAJ W<span style="color: white;">DOMU!</span></h1>
                 </div>
 
@@ -35,9 +36,47 @@
                         </li>
                     </ul>
                     <ul>
-                        <li> <button type="button" class="btn btn-danger btn-md" style="width: 124px;margin: 0;">
-                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Zaloguj się
-                            </button></li>
+                        <li>
+                            <!-- Button to open the modal login form -->
+                            <button onclick="document.getElementById('id01').style.display='block'" type="button" class="btn btn-dark"
+                                    style="width: 124px; margin: 0;"><span class="glyphicon glyphicon-user"
+                                        aria-hidden="true"></span> Zaloguj się
+                                </button>
+                            <!-- The Modal -->
+                            <div id="id01" class="modal">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                    title="Close Modal">&times;</span>
+
+                                <!-- Modal Content -->
+                                <form class="modal-content animate" action="/action_page.php">
+                                    <div class="imgcontainer">
+                                        <img src="img/640px-HSV-Logo.png" alt="Avatar" class="avatar">
+                                    </div>
+
+                                    <div class="container-login">
+                                        <label for="uname" style="color:black;"><b>Username</b></label>
+                                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                        <label for="psw" style="color:black;"><b>Password</b></label>
+                                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                        <button type="submit" style="padding: 4px 4px;width: 30%;">Login</button><br>
+                                        <label style="color:black;">
+                                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                                        </label>
+                                    </div>
+
+                                    <div class="container-login"
+                                        style="background-color:#f1f1f1;height: 65px; padding: 10px;align-items: center;">
+                                        <button type="button"
+                                            onclick="document.getElementById('id01').style.display='none'"
+                                            class="cancelbtn" style="padding: 0;width: 80px;">Cancel</button>
+                                        <span class="psw"><span style="color:black;margin-right: 5px;">Forgot</span><a
+                                                href="#">password?</a></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
                     </ul>
                 </div>
 
@@ -47,7 +86,7 @@
 
             </div>
         </nav>
-       
+
         <nav id="menu">
             <div class="menu-container container">
                 <div class="row" style="height: 60px;">

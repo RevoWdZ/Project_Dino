@@ -61,6 +61,7 @@ body, html {
     text-align: center;
     margin: 0;
     padding: 0 8px 0 8px;
+    height: 100%;
 }
 
 #navbar-list ul li {
