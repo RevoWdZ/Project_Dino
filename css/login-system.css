@@ -56,7 +56,9 @@ img.avatar {
 
 span.psw {
     float: right;
-    padding-top: 16px;
+    height: 100%;
+    vertical-align: middle;
+    line-height: 45px;
 }
 
 /* The Modal (background) */
@@ -90,7 +92,7 @@ span.psw {
     margin: 5% auto 15% auto;
     /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
-    width: 80%;
+    width: 40%;
     /* Could be more or less, depending on screen size */
 }
 

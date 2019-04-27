@@ -10,7 +10,6 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/login-system.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui.css">
     <link rel="shortcut icon" href="img/favicon.ico" />
     <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
 
@@ -19,7 +18,7 @@
 <body>
     <!-- pasek na samej górze z logo i odnośnikami do sklepu i logowania się oraz menu-->
     <header>
-        <nav class="navbar navbar-dark navbar-expand-md ">
+        <nav class="nav navbar navbar-dark navbar-expand-md ">
             <div class="container container-navbar" style="height: 76px;">
                 <div class="logo">
                     <a class="navbar-brand" href="#" style="padding: 0;"><img src="img/640px-HSV-Logo.png" /></a>
@@ -38,29 +37,30 @@
                     <ul>
                         <li>
                             <!-- Button to open the modal login form -->
-                            <button onclick="document.getElementById('id01').style.display='block'" type="button" class="btn btn-dark"
-                                    style="width: 124px; margin: 0;"><span class="glyphicon glyphicon-user"
-                                        aria-hidden="true"></span> Zaloguj się
-                                </button>
+                            <button onclick="document.getElementById('id01').style.display='block'" type="button"
+                                class="btn btn-dark" style="width: 124px; margin: 0;"><span
+                                    class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Zaloguj się
+                            </button>
                             <!-- The Modal -->
                             <div id="id01" class="modal">
                                 <span onclick="document.getElementById('id01').style.display='none'" class="close"
                                     title="Close Modal">&times;</span>
 
                                 <!-- Modal Content -->
-                                <form class="modal-content animate" action="/action_page.php">
+                                <form class="modal-content animate" action="login/includes/login.inc.php" method="post">
                                     <div class="imgcontainer">
                                         <img src="img/640px-HSV-Logo.png" alt="Avatar" class="avatar">
                                     </div>
 
                                     <div class="container-login">
                                         <label for="uname" style="color:black;"><b>Username</b></label>
-                                        <input type="text" placeholder="Enter Username" name="uname" required>
+                                        <input type="text" placeholder="Enter Username" name="mailuid" required>
 
                                         <label for="psw" style="color:black;"><b>Password</b></label>
-                                        <input type="password" placeholder="Enter Password" name="psw" required>
+                                        <input type="password" placeholder="Enter Password" name="pwd" required>
 
-                                        <button type="submit" style="padding: 4px 4px;width: 30%;">Login</button><br>
+                                        <button type="submit" name="login-submit"
+                                            style="padding: 4px 4px;width: 30%;line-height: 22px;">Login</button><br>
                                         <label style="color:black;">
                                             <input type="checkbox" checked="checked" name="remember"> Remember me
                                         </label>
@@ -70,7 +70,8 @@
                                         style="background-color:#f1f1f1;height: 65px; padding: 10px;align-items: center;">
                                         <button type="button"
                                             onclick="document.getElementById('id01').style.display='none'"
-                                            class="cancelbtn" style="padding: 0;width: 80px;">Cancel</button>
+                                            class="cancelbtn"
+                                            style="padding: 0;width: 80px;line-height: 30px;">Cancel</button>
                                         <span class="psw"><span style="color:black;margin-right: 5px;">Forgot</span><a
                                                 href="#">password?</a></span>
                                     </div>
@@ -328,9 +329,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
         integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
     <script src="js/slideshow.js"></script>
     <script src="js/timer.js"></script>
-    <script src="js/resize.js"></script>
+    <script src="js/loginform_close.js"></script>
+    <script src="js/stickynav.js"></script>
 </body>
 
 </html>
