@@ -2,6 +2,7 @@
 date_default_timezone_set('Europe/Copenhagen');
 include 'php/dbh.inc.php';
 include 'php/comments.inc.php';
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -39,9 +40,57 @@ include 'php/comments.inc.php';
                         </li>
                     </ul>
                     <ul>
-                        <li> <button type="button" class="btn btn-danger btn-md" style="width: 124px;margin: 0;">
-                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Zaloguj się
-                            </button></li>
+                        <li>
+                            <?php
+                            if (isset($_SESSION['userId'])) {
+                                echo '<form action="login/includes/logout.inc.php" method="post" style="height: 100%;">
+                                <button name="logout-submit" type="submit" class="btn btn-danger" style="width: 140px; margin: 0;"><span class="glyphicon glyphicon-log-out" aria-hidden="true" style="margin-right: 5px;"></span>Wyloguj się
+                                </button>
+                                </form>';
+                            } else {
+                                echo '<button onclick="document.getElementById(.id01.).style.display=.block. type="button"
+                                class="btn btn-dark" style="width: 124px; margin: 0;"><span
+                                    class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Zaloguj się
+                                </button>
+                                <div id="id01" class="modal">
+                                <span onclick="document.getElementById(\id01\).style.display=\none\" class="close"
+                                    title="Close Modal">&times;</span>
+
+                                <!-- Modal Content -->
+                                <form class="modal-content animate" action="login/includes/login.inc.php" method="post">
+                                    <div class="imgcontainer">
+                                        <img src="img/640px-HSV-Logo.png" alt="Avatar" class="avatar">
+                                    </div>
+
+                                    <div class="container-login">
+                                        <label for="uname" style="color:black;"><b>Username</b></label>
+                                        <input type="text" placeholder="Enter Username" name="mailuid" required>
+
+                                        <label for="psw" style="color:black;"><b>Password</b></label>
+                                        <input type="password" placeholder="Enter Password" name="pwd" required>
+
+                                        <button type="submit" name="login-submit"
+                                            style="padding: 4px 4px;width: 30%;line-height: 22px;">Login</button><br>
+                                        <label style="color:black;">
+                                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                                        </label>
+                                    </div>
+
+                                    <div class="container-login"
+                                        style="background-color:#f1f1f1;height: 65px; padding: 10px;align-items: center;">
+                                        <button type="button"
+                                            onclick="document.getElementById(\id01\).style.display=\none\"
+                                            class="cancelbtn"
+                                            style="padding: 0;width: 80px;line-height: 30px;">Cancel</button>
+                                        <span class="psw"><span style="color:black;margin-right: 5px;">Forgot</span><a
+                                                href="#">password?</a></span>
+                                    </div>
+                                </form>
+                            </div>';
+                            }
+                            ?>
+
+                        </li>
                     </ul>
                 </div>
 
@@ -125,15 +174,18 @@ include 'php/comments.inc.php';
         </div>
         <section class="commentsection container">
             <?php
-            echo "<form method='POST' action='" . setComments($conn) . "'>
-        <input type='hidden' name='user_id' value='Anonymous'>
-        <input type='hidden'name='date' value='" . date('Y-m-d H:i:s') . "'>
-        <textarea name='message'></textarea> <br>
-        <button type='submit' name='commentSubmit'>Comment</button>
-        </form>";
-
+            if (isset($_SESSION['userId'])) {
+                echo "<form method='POST' action='" . setComments($conn) . "'>
+                <input type='hidden' name='user_id' value='".$_SESSION['userId']."'>
+                <input type='hidden'name='date' value='" . date('Y-m-d H:i:s') . "'>
+                <textarea name='message'></textarea> <br>
+                <button type='submit' name='commentSubmit'>Comment</button>
+                </form>";
+                echo "Jestes zalogowany";
+            } else {
+                echo '<div style="color:white;font-weight:500;">Musisz być zalogowany ,żeby komentować</div>';
+            }
             getComments($conn);
-
             ?>
         </section>
     </main>

@@ -93,7 +93,7 @@ session_start();
 
                             <div class="slide fade">
 
-                                <a href="article.php"><img src="../img/slide1.png" style="width:100%"></a>
+                                <a href="../article.php"><img src="../img/slide1.png" style="width:100%"></a>
 
                             </div>
 
