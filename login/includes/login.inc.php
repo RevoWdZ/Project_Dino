@@ -5,13 +5,13 @@ if (isset($_POST['login-submit'])) {
     $password = $_POST['pwd'];
 
     if (empty($mailuid) || empty($password)) {
-        header("Location: ../index.php?error=emptyfields");
+        header("Location: http://localhost/Project_Dino?error=emptyfields");
         exit();
     } else {
         $sql = "SELECT * FROM users WHERE user_name=? OR emailUsers=?;";
         $stmt = mysqli_stmt_init($conn);
         if (!mysqli_stmt_prepare($stmt, $sql)) {
-            header("Location: ../index.php?error=sqlerror");
+            header("Location: http://localhost/Project_Dino?error=sqlerror");
             exit();
         } else {
             mysqli_stmt_bind_param($stmt, "ss", $mailuid, $mailuid);
@@ -20,7 +20,7 @@ if (isset($_POST['login-submit'])) {
             if ($row = mysqli_fetch_assoc($result)) {
                 $pwdCheck = password_verify($password, $row['password']);
                 if ($pwdCheck == false) {
-                    header("Location: ../index.php?error=wrongpassword");
+                    header("Location: http://localhost/Project_Dino?error=wrongpassword");
                     exit();
                 } else if ($pwdCheck == true) {
                     session_start();
@@ -29,16 +29,16 @@ if (isset($_POST['login-submit'])) {
                     header("Location: ../loggedIndex.php?login=succes");
                     exit();
                 } else {
-                    header("Location: ../index.php?error=wrongpwd");
+                    header("Location: .http://localhost/Project_Dino?error=wrongpwd");
                     exit();
                 }
             } else {
-                header("Location: ../index.php?error=nouser");
+                header("Location: http://localhost/Project_Dino?error=nouser");
                 exit();
             }
         }
     }
 } else {
-    header("Location: ../index.php");
+    header("Location: http://localhost/Project_Dino");
     exit();
 }

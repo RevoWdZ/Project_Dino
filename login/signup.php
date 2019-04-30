@@ -1,43 +1,42 @@
-<?php
-require "header.php";
-?>
+<html>
+<link rel="stylesheet" type="text/css" media="screen" href="../css/registry.css">
 
-<main>
-    <h1>SignUp</h1>
-    <?php
-    if(isset($_GET['error'])){
-        if($_GET['error']=="emptyfields"){
-            echo '<p class="signuperror">Fill in all fields!</p>';
-        }
-        else if($_GET['error']=="invalidmailuid"){
-            echo '<p class="signuperror">Fill in all fields!</p>';
-        }
-        else if($_GET['error']=="invaliduid"){
-            echo '<p class="signuperror">Invalid username!</p>';
-        }
-        else if($_GET['error']=="invalidmail"){
-            echo '<p class="signuperror">Invalid email!</p>';
-        }
-        else if($_GET['error']=="passwordcheck"){
-            echo '<p class="signuperror">Your passwords do not match!</p>';
-        }
-        else if($_GET['error']=="usertaken"){
-            echo '<p class="signuperror">Username is already taken!</p>';
-        }
-    }
-    else if($_GET['signup']=="success"){
-        echo '<p class="signuperror">Sign up successfull!</p>';
-    }
-    ?>
-    <form action="includes/signup.inc.php" method="post">
-    <input type="text" name="uid" placeholder="Username">
-    <input type="text" name="mail" placeholder="E-Mail">
-    <input type="password" name="pwd" placeholder="Password">
-    <input type="password" name="pwd-repeat" placeholder="Repeat Password">
-    <button type="submit" name="signup-submit">Signup</button>
-</form>
-</main>
+<body>
+    <main>
+        <div class="imgcontainer">
+            <h1>Dołącz do HSV !</h1>
+            <img src="../img/640px-HSV-Logo.png" alt="Avatar" class="avatar">
+        </div>
 
-<?php
-require "footer.php";
-?>
+        <?php
+        if (isset($_GET["error"])) {
+            if ($_GET["error"] == "emptyfields") {
+                echo '<p class="signuperror">Uzupełnij wszystkie pola!</p>';
+            } else if ($_GET["error"] == "invalidmailuid") {
+                echo '<p class="signuperror">Uzupełnij wszystkie pola!</p>';
+            } else if ($_GET["error"] == "invaliduid") {
+                echo '<p class="signuperror">Nieprawidłowa nazwa użytkownika!</p>';
+            } else if ($_GET["error"] == "invalidmail") {
+                echo '<p class="signuperror">Nieprawidłowy E-Mail!</p>';
+            } else if ($_GET["error"] == "passwordcheck") {
+                echo '<p class="signuperror">Hasła nie pasują do siebie!</p>';
+            } else if ($_GET["error"] == "usertaken") {
+                echo '<p class="signuperror">Nazwa użytkownika jest już zajęta!</p>';
+            }
+        } else if ($_GET["signup"] == "success") {
+            echo '<p class="signuperror" style="color:#00ff00;">Rejestracja przebiegła pomyślnie!</p>';
+        }
+        ?>
+        <div class="register-container">
+            <form action="includes/signup.inc.php" method="post">
+                <input type="text" name="uid" placeholder="Nazwa Użytkownika">
+                <input type="text" name="mail" placeholder="E-Mail">
+                <input type="password" name="pwd" placeholder="Hasło">
+                <input type="password" name="pwd-repeat" placeholder="Powtórz hasło"><br>
+                <button type="submit" name="signup-submit">Zarejestruj się</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

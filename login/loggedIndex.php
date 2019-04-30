@@ -24,8 +24,8 @@ session_start();
         <nav class="nav navbar navbar-dark navbar-expand-md ">
             <div class="container container-navbar" style="height: 76px;">
                 <div class="logo">
-                    <a class="navbar-brand" href="#" style="padding: 0;"><img src="../img/640px-HSV-Logo.png" /></a>
-                    <h1>WITAJ W<span style="color: white;">DOMU!</span></h1>
+                    <a class="navbar-brand" href="loggedIndex.php" style="padding: 0;"><img src="../img/640px-HSV-Logo.png" /></a>
+                    <h1>WITAJ W<span style="color: white;"> DOMU!</span></h1>
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbar-list" style="max-width: 300px;">
