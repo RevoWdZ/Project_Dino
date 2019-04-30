@@ -1,4 +1,5 @@
 var slideIndex = 1;
+var plus;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -20,7 +21,9 @@ function showSlides(n) {
     }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
+        plus++;
     }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+setTimeout(showSlides, 1000);
