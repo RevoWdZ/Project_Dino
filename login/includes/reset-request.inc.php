@@ -2,7 +2,7 @@
 
 if(isset($_POST["reset-request-submit"])){
 
-    $selector = bind2hex(random_bytes(8));
+    $selector = bin2hex(random_bytes(8));
     $token = random_bytes(32);
 
     $url = "http://localhost/Project_Dino/login/create-new-password.php?selector=" . $selector . "&validator=" . bin2hex($token);
@@ -36,7 +36,7 @@ if(isset($_POST["reset-request-submit"])){
     }
 
     mysqli_stmt_close($stmt);
-    mysqli_close();
+    mysqli_close($conn);
 
     $to = $userEmail;
     $subject = 'Eset your password for mmtuts';

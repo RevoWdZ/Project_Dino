@@ -12,7 +12,7 @@
         <div class="register-container">
             <form action="includes/reset-request.inc.php" method="post">
                 <input type="text" name="email" placeholder="Wpisz tutaj swój adres e-mail...">
-                <button type="submit" name="reset-request-submit">Zresetuj hasło</button>
+                <button type="submit" name="reset-request-submit">Wyślij wiadomość email</button>
             </form>
             <?php
             if (isset($_GET["reset"])) {

@@ -23,8 +23,12 @@
             } else if ($_GET["error"] == "usertaken") {
                 echo '<p class="signuperror">Nazwa użytkownika jest już zajęta!</p>';
             }
-        } else if ($_GET["signup"] == "success") {
-            echo '<p class="signuperror" style="color:#00ff00;">Rejestracja przebiegła pomyślnie!</p>';
+        } else {
+            if (isset($_GET["signup"])) {
+                if ($_GET["signup"] == "success") {
+                    echo '<p class="signuperror" style="color:#00ff00;">Rejestracja przebiegła pomyślnie!</p>';
+                }
+            }
         }
         ?>
         <div class="register-container">
