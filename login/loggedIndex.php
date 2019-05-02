@@ -131,56 +131,60 @@ session_start();
                             <div class="article col-sm-5 ">
                                 <div class="article inside_article">
                                     <div class="article-img">
-                                        <img src="../img/col5.png">
+                                        <img src="img/col5.png">
                                     </div>
                                     <header class="article-header">
-                                        <h3>asdasdasdasdasdasdasd</h3>
-                                        <p>liasdbhoaishdbashiopdvboashdboh</p>
+                                        <h2>Lorem ipsum dolor sit amet.</h2>
                                     </header>
+                                    <p class="article-text">Sed viverra ut dolor vel convallis. Cras nec quam vitae.</p>
                                 </div>
                             </div>
                             <div class="article col-sm-5 ">
                                 <div class="article inside_article">
                                     <div class="article-img">
-                                        <img src="../img/col5.png">
+                                        <img src="img/col5.png">
                                     </div>
                                     <header class="article-header">
-                                        <h3>asdasdasdasdasdasdasd</h3>
-                                        <p>liasdbhoaishdbashiopdvboashdb</p>
+                                        <h2>Aenean eleifend vitae velit at.</h2>
                                     </header>
+                                    <p class="article-text">Integer consectetur lorem nec mauris iaculis semper.
+                                        Praesent ornare nisl.</p>
                                 </div>
                             </div>
                             <div class="article col-sm-3">
                                 <div class="article inside_article">
-                                    <div class="article-img">
-                                        <img src="../img/640px-HSV-Logo.png">
+                                    <div class="article-img" style="height: 100px;">
+                                        <img src="img/640px-HSV-Logo.png">
                                     </div>
                                     <header class="article-header">
-                                        <h6>asdasdasdasdasdasdasd</h6>
-                                        <p>liasdbhoaishdbash</p>
+                                        <h4>Ut dictum risus non ultrices.</h4>
                                     </header>
+                                    <p class="article-text">Nulla ultrices non quam id vehicula. Sed sollicitudin
+                                        consectetur dolor.</p>
                                 </div>
                             </div>
                             <div class="article col-sm-3">
                                 <div class="article inside_article">
-                                    <div class="article-img">
-                                        <img src="../img/640px-HSV-Logo.png">
+                                    <div class="article-img" style="height: 100px;">
+                                        <img src="img/640px-HSV-Logo.png">
                                     </div>
                                     <header class="article-header">
-                                        <h6>asdasdasdasdasdasdasd</h6>
-                                        <p>liasdbhoaishdbash</p>
+                                        <h4>Proin ut neque nunc. Duis.</h4>
                                     </header>
+                                    <p class="article-text">Maecenas porta mauris mi, vitae sodales risus pretium ut.
+                                        Praesent.</p>
                                 </div>
                             </div>
                             <div class="article col-sm-3">
                                 <div class="article inside_article">
-                                    <div class="article-img">
-                                        <img src="../img/640px-HSV-Logo.png">
+                                    <div class="article-img" style="height: 100px;">
+                                        <img src="img/640px-HSV-Logo.png">
                                     </div>
                                     <header class="article-header">
-                                        <h6>asdasdasdasdasdasdasd</h6>
-                                        <p>liasdbhoaishdbashiop</p>
+                                        <h4>Cras lacus turpis, consectetur vitae.</h4>
                                     </header>
+                                    <p class="article-text">Nunc ultrices tempus quam, at malesuada sem tristique non.
+                                        Mauris.</p>
                                 </div>
                             </div>
 
@@ -209,7 +213,50 @@ session_start();
                 </div>
 
                 <div class="trophies grid-item">
-
+                    <div class="title-row">
+                        <p class="title line">
+                            <span>PUCHARY</span>
+                        </p>
+                    </div>
+                    <div class="wrapper-outside trophies-wrapper">
+                        <div class="trophies-container">
+                            <a class="trophy-box">
+                                <figure class="trophy-image"><img src="img/bundesliga-meister.png"></figure>
+                                <div class="trophy-text">
+                                    <p class="number font-titling">6</p>
+                                    <p class="number font-titling">Bundesliga Meister</p>
+                                </div>
+                            </a>
+                            <a class="trophy-box">
+                                <figure class="trophy-image"><img src="img/DFB-POKAL.png"></figure>
+                                <div class="trophy-text">
+                                    <p class="number font-titling">3</p>
+                                    <p class="number font-titling">DFB-POKAL</p>
+                                </div>
+                            </a>
+                            <a class="trophy-box">
+                                <figure class="trophy-image"><img src="img/Champions-League-trophy.png"></figure>
+                                <div class="trophy-text">
+                                    <p class="number font-titling">1</p>
+                                    <p class="number font-titling">Liga Mistrzów</p>
+                                </div>
+                            </a>
+                            <a class="trophy-box">
+                                <figure class="trophy-image"><img src="img/200px-Coppa_delle_Coppe.svg.png"></figure>
+                                <div class="trophy-text">
+                                    <p class="number font-titling">1</p>
+                                    <p class="number font-titling">Puchar Zdobywców Pucharów</p>
+                                </div>
+                            </a>
+                            <a class="trophy-box">
+                                <figure class="trophy-image"><img src="img/UEFA-Intertoto-Cup.png"></figure>
+                                <div class="trophy-text">
+                                    <p class="number font-titling">2</p>
+                                    <p class="number font-titling">Puchar Intertoto</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

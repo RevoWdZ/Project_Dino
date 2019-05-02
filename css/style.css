@@ -119,51 +119,9 @@ body, html {
     font-family: 'Fira Mono', monospace;
 }
 
-#menu ul li:hover {
-    animation: textColor 10s ease infinite;
-}
-
-#menu ul li:after {
-    position: absolute;
-    content: "";
-    top: 5vw;
-    transform: scale(0.75);
-    -webkit-filter: blur(5vw);
-    -moz-filter: blur(5vw);
-    -ms-filter: blur(5vw);
-    filter: blur(5vw);
-    background-size: 200% 200%;
-    animation: animateGlow 10s ease infinite;
-}
-
-@keyframes animateGlow {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-@keyframes textColor {
-    0% {
-        color: #0055aa;
-    }
-    25% {
-        color: #7b04eb;
-    }
-    50% {
-        color: #f30202;
-    }
-    75% {
-        color: #06a0cf;
-    }
-    100% {
-        color: #0055aa;
-    }
+#menu ul:hover {
+    background-color: #0055aa;
+    color: white;
 }
 
 /*------------header-----------------------------*/
@@ -302,6 +260,7 @@ a:not([href]):not([tabindex]) {
     margin: 10px 5px 10px 10px;
     padding: 10px 10px 10px 10px;
 }
+
 .article-text {
     padding-top: 5px;
     font-size: 15px;
@@ -325,7 +284,6 @@ a:not([href]):not([tabindex]) {
 
 .article-header {
     margin-top: 5px;
-    
 }
 
 .inside_article:hover {
@@ -395,7 +353,90 @@ a:not([href]):not([tabindex]) {
 
 .trophies {
     background-color: white;
-    height: 198px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: url(../img/palmares-bg.png) 50% -80% repeat-x #af9349;
+    height: 297px;
+}
+
+.trophies .title-row {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.trophies .title-row .title {
+    font-size: 27px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.trophies .title-row .line {
+    background-image: url(../img/line.png);
+    background-repeat: repeat-x;
+    background-position-y: 50%;
+    height: 30px;
+}
+
+.trophies .title-row .title span {
+    background-color: #af9349;
+    padding: 0 18px;
+}
+
+.wrapper-outside {
+    max-width: 800px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.trophies .trophies-container {
+    margin-top: 15px;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.trophies .trophies-container .trophy-box {
+    color: #fff;
+    text-align: center;
+    width: 110px;
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+}
+
+.trophy-image {
+    position: relative;
+    height: 100px;
+}
+
+.trophy-image img {
+    position: absolute;
+    bottom: 0;
+    max-height: 100px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.trophies .trophies-container .cup-box .trophy-text {
+    padding-top: 16px;
+}
+
+.trophies .trophies-container .cup-box .number {
+    font-size: 48px;
+    padding: 0 0 9px;
+}
+
+.font-titling {
+    font-feature-settings: "titl" 1;
 }
 
 /*--------------footer---------------- */
@@ -716,9 +757,9 @@ button {
     opacity: 1;
 }
 
-.commentmessage{
+.commentmessage {
     float: right;
     position: absolute;
-    top:10px;
+    top: 10px;
     right: 10px;
 }
