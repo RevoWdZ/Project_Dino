@@ -27,6 +27,7 @@
             if (isset($_GET["signup"])) {
                 if ($_GET["signup"] == "success") {
                     echo '<p class="signuperror" style="color:#00ff00;">Rejestracja przebiegła pomyślnie!</p>';
+                    echo '<a href="http://localhost/Project_Dino/"><p class="signuperror">Wróć do strony głównej</p></a>';
                 }
             }
         }
