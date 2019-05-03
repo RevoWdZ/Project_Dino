@@ -8,6 +8,7 @@ body, html {
     width: 100%;
     margin: 0 !important;
     padding: 0;
+    
 }
 
 .navbar {
@@ -74,7 +75,9 @@ body, html {
     text-align: center;
     margin: 0;
     padding: 0 8px 0 8px;
+    width: 140px;
     height: 100%;
+    display: inline-block;
 }
 
 #navbar-list ul li {
@@ -575,6 +578,14 @@ hr {
         max-width: 700px;
     }
 }
+@media (max-width: 700px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
 
 * {
     margin: 0px;
@@ -673,6 +684,11 @@ hr {
 @media (max-width:492px) {
     .home {
         display: none;
+    }
+}
+@media (max-width:492px) {
+    .logo {
+        width: 50%;
     }
 }
 

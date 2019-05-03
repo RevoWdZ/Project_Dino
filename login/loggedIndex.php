@@ -56,32 +56,32 @@ session_start();
         </nav>
 
         <nav id="menu">
-            <div class="menu-container container">
-                <div class="row" style="height: 60px;">
-                    <ul>
-                        <li>Wiadomości</li>
-                    </ul>
-                    <ul>
-                        <li>Drużyna</li>
-                    </ul>
-                    <ul>
-                        <li>Sezon</li>
-                    </ul>
-                    <ul>
-                        <li>Klub</li>
-                    </ul>
-                    <ul>
-                        <li>Bilety</li>
-                    </ul>
-                    <ul>
-                        <li>Sklep</li>
-                    </ul>
-                    <ul>
-                        <li>Akademia</li>
-                    </ul>
+                <div class="menu-container container">
+                    <div class="row" style="height: 60px;">
+                        <ul>
+                            <li>Wiadomości</li>
+                        </ul>
+                        <ul>
+                            <li>Drużyna</li>
+                        </ul>
+                        <ul>
+                            <li>Sezon</li>
+                        </ul>
+                        <ul>
+                            <li>Klub</li>
+                        </ul>
+                        <ul>
+                            <li>Bilety</li>
+                        </ul>
+                        <ul>
+                            <li>Sklep</li>
+                        </ul>
+                        <ul>
+                            <li>Akademia</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
     </header>
     <!---------------------------------------------------------------------------------------------------------------------------->
     <main class="main-content" id="content" role="main">

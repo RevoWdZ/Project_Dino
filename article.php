@@ -16,6 +16,7 @@ session_start();
     <link rel="stylesheet" type="text/css" media="screen" href="css/glyphicon.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/article_responsive.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui.css">
     <link rel="shortcut icon" href="img/favicon.ico" />
     <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
@@ -33,27 +34,32 @@ session_start();
                     <h1>WITAJ W<span style="color: white;"> DOMU!</span></h1>
                 </div>
 
+                <button style="margin:0;"  class="navbar-toggler" type="button" data-toggle="collapse" data-target=".hide" aria-controls="navbar-list" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span><span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span></button>
+
                 <div class="collapse navbar-collapse" id="navbar-list" style="max-width: 300px;">
-                    <ul>
-                        <li><a href="https://shop.hsv.de/?utm_source=hsvde&utm_medium=Navbar&utm_campaign=Shop" target="_blank"><button type="button" class="btn btn-primary" style="width: 100px;margin: 0;"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Sklep
-                                </button></a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <?php
-                            if (isset($_SESSION['userId'])) {
-                                echo '<form action="login/includes/logout.inc.php" method="post" style="height: 100%;">
+                    <nav class="navbar-expand-md" style="width: 100%; height: 100%;">
+                        <ul>
+                            <li><a href="https://shop.hsv.de/?utm_source=hsvde&utm_medium=Navbar&utm_campaign=Shop" target="_blank"><button type="button" class="btn btn-primary" style="width: 100px;margin: 0;"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Sklep
+                                    </button></a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <?php
+                                if (isset($_SESSION['userId'])) {
+                                    echo '<form action="login/includes/logout.inc.php" method="post" style="height: 100%;">
                                 <button name="logout-submit" type="submit" class="btn btn-danger" style="width: 140px; margin: 0;"><span class="glyphicon glyphicon-log-out" aria-hidden="true" style="margin-right: 5px;"></span>Wyloguj się
                                 </button>
                                 </form>';
-                            } else {
-                                echo '<button onclick="document.getElementById(.id01.).style.display=.block. type="button"
+                                } else {
+                                    echo '<button onclick="document.getElementById(.id01.).style.display=.block. type="button"
                                 class="btn btn-dark" style="width: 124px; margin: 0;"><span
                                     class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Zaloguj się
                                 </button>
                                 <div id="id01" class="modal">
-                                <span onclick="document.getElementById(\id01\).style.display=\none\" class="close"
+                                <span onclick="document.getElementById(/id01/).style.display=/none/" class="close"
                                     title="Close Modal">&times;</span>
 
                                 <!-- Modal Content -->
@@ -87,15 +93,13 @@ session_start();
                                     </div>
                                 </form>
                             </div>';
-                            }
-                            ?>
+                                }
+                                ?>
 
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list " aria-controls="navbar-list" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-
             </div>
         </nav>
         <!--MENU--->
@@ -176,7 +180,7 @@ session_start();
             <?php
             if (isset($_SESSION['userId'])) {
                 echo "<form method='POST' action='" . setComments($conn) . "'>
-                <input type='hidden' name='user_id' value='".$_SESSION['userId']."'>
+                <input type='hidden' name='user_id' value='" . $_SESSION['userId'] . "'>
                 <input type='hidden'name='date' value='" . date('Y-m-d H:i:s') . "'>
                 <textarea name='message'></textarea> <br>
                 <button type='submit' name='commentSubmit'>Comment</button>
