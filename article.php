@@ -102,7 +102,6 @@ session_start();
                 </div>
             </div>
         </nav>
-        <!--MENU--->
         <nav id="menu">
             <div class="menu-container container">
                 <div class="row" style="height: 60px;">

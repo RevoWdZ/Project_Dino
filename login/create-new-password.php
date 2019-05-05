@@ -14,7 +14,7 @@
         $validator = $_GET["validator"];
 
         if (empty($selector) || empty($validator)) {
-            echo "Blad wyjebalo i siema nara! Jakbym postawil na serwerze to by dzialalo.ELO POZDRO 600";
+            echo "Blad .... i siema nara! Jakbym postawil na serwerze to by dzialalo.ELO POZDRO 600";
         } else {
             if (ctype_xdigit($selector) !== false && ctype_xdigit($validator) !== false) {
                 ?>

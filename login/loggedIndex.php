@@ -25,7 +25,7 @@ session_start();
             <div class="container container-navbar" style="height: 76px;">
                 <div class="logo">
                     <a class="navbar-brand" href="loggedIndex.php" style="padding: 0;"><img src="../img/640px-HSV-Logo.png" /></a>
-                    <h1>WITAJ W<span style="color: white;"> DOMU!</span></h1>
+                    <h1 class="home" style="color: white;">WITAJ W<span style="color: white;font-weight: 700"> DOMU!</span></h1>
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbar-list" style="max-width: 300px;">
@@ -311,16 +311,16 @@ session_start();
 
             <div class="row hidden-xs hidden-sm">
                 <div class="col-md-2 col-md-offset-2"><a>
-                        <div class="btn btn-link footer-links">KONTAKT</div>
+                        <div class="btn btn-link footer-links">Kontakt</div>
                     </a></div>
                 <div class="col-md-2"><a>
-                        <div class="btn btn-link  footer-links ">KONTAKT</div>
+                        <div class="btn btn-link  footer-links ">O klubie</div>
                     </a></div>
                 <div class="col-md-2"><a>
-                        <div class="btn btn-link  footer-links">KONTAKT</div>
+                        <div class="btn btn-link  footer-links">Pomoc</div>
                     </a></div>
                 <div class="col-md-2"><a>
-                        <div class="btn btn-link  footer-links">KONTAKT</div>
+                        <div class="btn btn-link  footer-links">Zasady<br> i warunki</div>
                     </a></div>
             </div>
 
