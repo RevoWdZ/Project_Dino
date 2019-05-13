@@ -192,17 +192,17 @@ include 'php/comments.inc.php';
 
 
             <div class="row hidden-xs hidden-sm">
-                <div class="col-md-2 col-md-offset-2"><a>
-                        <div class="btn btn-link footer-links">KONTAKT</div>
+            <div class="col-md-2 col-md-offset-2"><a>
+                        <div class="btn btn-link footer-links">Kontakt</div>
                     </a></div>
                 <div class="col-md-2"><a>
-                        <div class="btn btn-link  footer-links ">KONTAKT</div>
+                        <div class="btn btn-link  footer-links ">O klubie</div>
                     </a></div>
                 <div class="col-md-2"><a>
-                        <div class="btn btn-link  footer-links">KONTAKT</div>
+                        <div class="btn btn-link  footer-links">Pomoc</div>
                     </a></div>
                 <div class="col-md-2"><a>
-                        <div class="btn btn-link  footer-links">KONTAKT</div>
+                        <div class="btn btn-link  footer-links">Zasady<br> i warunki</div>
                     </a></div>
             </div>
 

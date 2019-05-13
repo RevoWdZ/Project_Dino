@@ -182,7 +182,7 @@ session_start();
                 <input type='hidden' name='user_id' value='" . $_SESSION['userId'] . "'>
                 <input type='hidden'name='date' value='" . date('Y-m-d H:i:s') . "'>
                 <textarea name='message'></textarea> <br>
-                <button type='submit' name='commentSubmit'>Comment</button>
+                <button type='submit' name='commentSubmit'>Dodaj komentarz</button>
                 </form>";
                 echo "Jestes zalogowany";
             } else {
@@ -242,17 +242,17 @@ session_start();
 
 
             <div class="row hidden-xs hidden-sm">
-                <div class="col-md-2 col-md-offset-2"><a>
-                        <div class="btn btn-link footer-links">KONTAKT</div>
+            <div class="col-md-2 col-md-offset-2"><a>
+                        <div class="btn btn-link footer-links">Kontakt</div>
                     </a></div>
                 <div class="col-md-2"><a>
-                        <div class="btn btn-link  footer-links ">KONTAKT</div>
+                        <div class="btn btn-link  footer-links ">O klubie</div>
                     </a></div>
                 <div class="col-md-2"><a>
-                        <div class="btn btn-link  footer-links">KONTAKT</div>
+                        <div class="btn btn-link  footer-links">Pomoc</div>
                     </a></div>
                 <div class="col-md-2"><a>
-                        <div class="btn btn-link  footer-links">KONTAKT</div>
+                        <div class="btn btn-link  footer-links">Zasady<br> i warunki</div>
                     </a></div>
             </div>
 
