@@ -136,7 +136,7 @@ session_start();
             <div class="container grid" id="grid" style="position:relative;height:100%;">
                 <div class="subject">
                     <div class="subject-img">
-                        <img src="img/slide1.png">
+                        <img src="img/zdj/article1.jpg">
                     </div>
                     <div class="subject-text">
                         <header>
