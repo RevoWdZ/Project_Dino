@@ -182,7 +182,7 @@ session_start();
                 <input type='hidden' name='user_id' value='" . $_SESSION['userId'] . "'>
                 <input type='hidden'name='date' value='" . date('Y-m-d H:i:s') . "'>
                 <textarea name='message'></textarea> <br>
-                <button type='submit' name='commentSubmit'>Dodaj komentarz</button>
+                <button style='height:50px; width:150px;' type='submit' name='commentSubmit'>Dodaj komentarz</button>
                 </form>";
                 echo "Jestes zalogowany";
             } else {

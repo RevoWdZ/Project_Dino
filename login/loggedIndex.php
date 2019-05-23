@@ -131,7 +131,7 @@ session_start();
                             <div class="article col-sm-5 ">
                                 <div class="article inside_article">
                                     <div class="article-img">
-                                        <img src="img/col5.png">
+                                        <img src="../img/zdj/53516185_2216374901945592_6749621872524001280_o.jpg">
                                     </div>
                                     <header class="article-header">
                                         <h2>Lorem ipsum dolor sit amet.</h2>
@@ -142,7 +142,7 @@ session_start();
                             <div class="article col-sm-5 ">
                                 <div class="article inside_article">
                                     <div class="article-img">
-                                        <img src="img/col5.png">
+                                        <img src="../img/zdj/Hamburger-SV-1.jpg">
                                     </div>
                                     <header class="article-header">
                                         <h2>Aenean eleifend vitae velit at.</h2>
@@ -154,7 +154,7 @@ session_start();
                             <div class="article col-sm-3">
                                 <div class="article inside_article">
                                     <div class="article-img" style="height: 100px;">
-                                        <img src="img/640px-HSV-Logo.png">
+                                        <img src="../img/zdj/Kinsombi_Verpflichtung_427-NEU.jpg">
                                     </div>
                                     <header class="article-header">
                                         <h4>Ut dictum risus non ultrices.</h4>
@@ -166,7 +166,7 @@ session_start();
                             <div class="article col-sm-3">
                                 <div class="article inside_article">
                                     <div class="article-img" style="height: 100px;">
-                                        <img src="img/640px-HSV-Logo.png">
+                                        <img src="../img/zdj/Stimmen-zum-Spiel_427.jpg">
                                     </div>
                                     <header class="article-header">
                                         <h4>Proin ut neque nunc. Duis.</h4>
@@ -178,7 +178,7 @@ session_start();
                             <div class="article col-sm-3">
                                 <div class="article inside_article">
                                     <div class="article-img" style="height: 100px;">
-                                        <img src="img/640px-HSV-Logo.png">
+                                        <img src="../img/zdj/53516185_2216374901945592_6749621872524001280_o.jpg">
                                     </div>
                                     <header class="article-header">
                                         <h4>Cras lacus turpis, consectetur vitae.</h4>
@@ -221,35 +221,35 @@ session_start();
                     <div class="wrapper-outside trophies-wrapper">
                         <div class="trophies-container">
                             <a class="trophy-box">
-                                <figure class="trophy-image"><img src="img/bundesliga-meister.png"></figure>
+                                <figure class="trophy-image"><img src="../img/bundesliga-meister.png"></figure>
                                 <div class="trophy-text">
                                     <p class="number font-titling">6</p>
                                     <p class="number font-titling">Bundesliga Meister</p>
                                 </div>
                             </a>
                             <a class="trophy-box">
-                                <figure class="trophy-image"><img src="img/DFB-POKAL.png"></figure>
+                                <figure class="trophy-image"><img src="../img/DFB-POKAL.png"></figure>
                                 <div class="trophy-text">
                                     <p class="number font-titling">3</p>
                                     <p class="number font-titling">DFB-POKAL</p>
                                 </div>
                             </a>
                             <a class="trophy-box">
-                                <figure class="trophy-image"><img src="img/Champions-League-trophy.png"></figure>
+                                <figure class="trophy-image"><img src="../img/Champions-League-trophy.png"></figure>
                                 <div class="trophy-text">
                                     <p class="number font-titling">1</p>
                                     <p class="number font-titling">Liga Mistrzów</p>
                                 </div>
                             </a>
                             <a class="trophy-box">
-                                <figure class="trophy-image"><img src="img/200px-Coppa_delle_Coppe.svg.png"></figure>
+                                <figure class="trophy-image"><img src="../img/200px-Coppa_delle_Coppe.svg.png"></figure>
                                 <div class="trophy-text">
                                     <p class="number font-titling">1</p>
                                     <p class="number font-titling">Puchar Zdobywców Pucharów</p>
                                 </div>
                             </a>
                             <a class="trophy-box">
-                                <figure class="trophy-image"><img src="img/UEFA-Intertoto-Cup.png"></figure>
+                                <figure class="trophy-image"><img src="../img/UEFA-Intertoto-Cup.png"></figure>
                                 <div class="trophy-text">
                                     <p class="number font-titling">2</p>
                                     <p class="number font-titling">Puchar Intertoto</p>
